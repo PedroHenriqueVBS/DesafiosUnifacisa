@@ -29,10 +29,13 @@ public class Main {
                 for (int i = 0; i < tarefa.size(); i++) {
                     JOptionPane.showMessageDialog(null, i +" "+ tarefa.get(i));
                     menu= 0;
+                    menu = Integer.parseInt(JOptionPane.showInputDialog("Escolha uma opção: "));
                 }
+            }
             if(menu == 3){
                 JOptionPane.showInputDialog("Qual tarefa você deseja remover?");
-            }
+                
+
             }
         }
 
