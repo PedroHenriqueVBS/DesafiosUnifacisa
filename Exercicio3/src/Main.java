@@ -26,15 +26,24 @@ public class Main {
                 menu = Integer.parseInt(JOptionPane.showInputDialog("Escolha uma opção: "));
             }
             if(menu == 2){
-                for (int i = 0; i < tarefa.size(); i++) {
-                    JOptionPane.showMessageDialog(null, i +" "+ tarefa.get(i));
-                    menu= 0;
+                //for (int i = 0; i <= tarefa.size(); i++) {
+                //Object[] possibleValues = { "First", "Second", "Third" };
+
+                Object selectedValue = JOptionPane.showInputDialog(null,
+                        "Choose one", "Input",
+                        JOptionPane.INFORMATION_MESSAGE, null,
+                        tarefa, tarefa.get(0));
+
+
+
+                menu= 0;
                     menu = Integer.parseInt(JOptionPane.showInputDialog("Escolha uma opção: "));
                 }
             }
             if(menu == 3){
                 JOptionPane.showInputDialog("Qual tarefa você deseja remover?");
-                
+
+
 
             }
         }
