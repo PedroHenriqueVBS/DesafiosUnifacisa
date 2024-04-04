@@ -1,17 +1,17 @@
-public class Tarefas {
-    public String nome;
-    public String descricao;
+class Tarefas {
+    private String nome;
+    private String descricao;
 
-    public String getNome(String nome) {
-        return this.nome;
+    public String getNome() {
+        return nome;
     }
 
     public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String getDescricao(String descricao) {
-        return this.descricao;
+    public String getDescricao() {
+        return descricao;
     }
 
     public void setDescricao(String descricao) {

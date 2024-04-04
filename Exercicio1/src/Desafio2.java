@@ -8,25 +8,25 @@ public class Desafio2 {
 
         switch (dia) {
             case 1:
-                JOptionPane.showMessageDialog(null, dias.dia1);
+                JOptionPane.showMessageDialog(null, dias.DOMINGO);
                 break;
             case 2:
-                JOptionPane.showMessageDialog(null, dias.dia2);
+                JOptionPane.showMessageDialog(null, dias.SEGUNDA);
                 break;
             case 3:
-                JOptionPane.showMessageDialog(null, dias.dia3);
+                JOptionPane.showMessageDialog(null, dias.TERÇA);
                 break;
             case 4:
-                JOptionPane.showMessageDialog(null, dias.dia4);
+                JOptionPane.showMessageDialog(null, dias.QUARTA);
                 break;
             case 5:
-                JOptionPane.showMessageDialog(null, dias.dia5);
+                JOptionPane.showMessageDialog(null, dias.QUINTA);
                 break;
             case 6:
-                JOptionPane.showMessageDialog(null, dias.dia6);
+                JOptionPane.showMessageDialog(null, dias.SEXTA);
                 break;
             case 7:
-                JOptionPane.showMessageDialog(null, dias.dia7);
+                JOptionPane.showMessageDialog(null, dias.SÁBADO);
         }
     }
 }

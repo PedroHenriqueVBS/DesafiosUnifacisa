@@ -1,11 +1,11 @@
 public class DiasSemana {
-    public static String dia1 = "Domingo";
-    public static String dia2 = "Segunda";
-    public static String dia3 = "Terça";
-    public static String dia4 = "Quarta";
-    public static String dia5 = "Quinta";
-    public static String dia6 = "Sexta";
-    public static String dia7 = "Sábado";
+    public static final int DOMINGO = 1;
+    public static final int SEGUNDA = 2;
+    public static final int TERÇA = 3;
+    public static final int QUARTA = 4;
+    public static final int QUINTA = 5;
+    public static final int SEXTA = 6;
+    public static final int SÁBADO = 7;
 
 
 
