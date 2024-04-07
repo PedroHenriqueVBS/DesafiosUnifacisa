@@ -1,4 +1,4 @@
-class Tarefas {
+class Tarefa {
     private String nome;
     private String descricao;
 
@@ -21,8 +21,7 @@ class Tarefas {
     @Override
     public String toString() {
         return
-                  nome  +
-                descricao + '\''
+                  nome
                 ;
     }
 }

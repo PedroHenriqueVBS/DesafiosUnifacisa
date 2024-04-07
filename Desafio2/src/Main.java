@@ -3,20 +3,21 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("LISTA DE TAREFAS");
-        ArrayList<Tarefas> tarefas = new ArrayList<>();
+        JOptionPane.showMessageDialog(null, "LISTA DE TAREFAS");
+        ArrayList<Tarefa> tarefas = new ArrayList<>();
 
-        System.out.println("""
+        JOptionPane.showMessageDialog(null,"""
                 Menu:
                 1. Adicionar Tarefa
                 2. Visualizar Tarefas
                 3. Remover Tarefa
                 4. Sair""");
 
+
         int menu = Integer.parseInt(JOptionPane.showInputDialog("Escolha uma opção: "));
         while (menu != 4) {
             if (menu == 1) {
-                Tarefas tarefa = new Tarefas();
+                Tarefa tarefa = new Tarefa();
                 tarefa.setNome(JOptionPane.showInputDialog(null, "Nome da tarefa"));
                 tarefa.setDescricao(JOptionPane.showInputDialog(null, "Descrição da tarefa"));
 
@@ -29,7 +30,7 @@ public class Main {
                     JOptionPane.showMessageDialog(null, "Nenhuma tarefa disponível.");
                 } else {
                     Object[] tarefasArray = tarefas.toArray();
-                    Tarefas tarefaSelecionada = (Tarefas) JOptionPane.showInputDialog(null,
+                    Tarefa tarefaSelecionada = (Tarefa) JOptionPane.showInputDialog(null,
                             "Selecione uma tarefa", "Tarefas",
                             JOptionPane.INFORMATION_MESSAGE, null,
                             tarefasArray, tarefasArray[0]);
