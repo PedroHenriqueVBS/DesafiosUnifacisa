@@ -1,24 +1,23 @@
 public class Conta {
-    public int numero;
-    public String titular;
-    public double saldo;
+    private  int numero;
+    private String nomeTitular;
+    private double saldo;
 
-    public Conta(){
 
-    }
-    public int getNumero(){
-        return this.numero;
-    }
-    public void setNumero(){
-
+    public int getNumero() {
+        return numero;
     }
 
-    public String getTitular() {
-        return titular;
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
 
-    public void setTitular(String titular) {
-        this.titular = titular;
+    public String getNomeTitular() {
+        return nomeTitular;
+    }
+
+    public void setNomeTitular(String nomeTitular) {
+        this.nomeTitular = nomeTitular;
     }
 
     public double getSaldo() {
@@ -27,5 +26,13 @@ public class Conta {
 
     public void setSaldo(double saldo) {
         this.saldo = saldo;
+    }
+
+    @Override
+    public String toString() {
+        return "Account " + numero +
+                ", Holder: " + nomeTitular +
+                ", Balance: $" + saldo
+                ;
     }
 }
